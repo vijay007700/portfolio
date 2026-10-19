@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="vineyard-sky" x1="600" y1="0" x2="600" y2="675" gradientUnits="userSpaceOnUse"><stop stop-color="#F6EFD9"/><stop offset=".55" stop-color="#F7F4E9"/><stop offset="1" stop-color="#E4F1E2"/></linearGradient>
+    <linearGradient id="vineyard-hill" x1="320" y1="325" x2="840" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#8CC19A"/><stop offset="1" stop-color="#4E8A70"/></linearGradient>
+    <filter id="vineyard-shadow" x="56" y="58" width="1088" height="548" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#vineyard-sky)"/>
+  <circle cx="952" cy="153" r="76" fill="#F6CF80"/>
+  <path d="M0 386c148-91 260-63 397 7 145 74 244-85 408-39 130 36 239 90 395 10v311H0V386Z" fill="#BCD7AF"/>
+  <path d="M0 468c176-86 289-66 450 10 166 78 264-54 410-15 136 37 227 86 340 28v184H0V468Z" fill="url(#vineyard-hill)"/>
+  <path d="M0 586c214-95 375-75 567-7 188 66 387-40 633-22v118H0V586Z" fill="#6B9B76"/>
+  <g stroke="#E8F2DA" stroke-width="5" opacity=".82">
+    <path d="M60 610c165-89 306-69 454-12M15 646c199-95 351-73 512-11M178 674c159-71 283-61 394-17"/>
+    <path d="M658 597c146-70 278-76 465-5M680 638c151-73 309-79 520-12M748 674c146-58 279-63 405-25"/>
+  </g>
+  <g fill="#497E5F"><circle cx="197" cy="445" r="13"/><circle cx="222" cy="460" r="13"/><circle cx="246" cy="474" r="13"/><circle cx="1000" cy="456" r="14"/><circle cx="1026" cy="470" r="14"/><circle cx="1053" cy="482" r="14"/></g>
+  <rect x="88" y="71" width="432" height="166" rx="18" fill="#7D806C" opacity=".12" filter="url(#vineyard-shadow)"/>
+  <rect x="79" y="61" width="438" height="166" rx="18" fill="#fff" opacity=".91"/>
+  <text x="115" y="111" fill="#718373" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="4">WINERY COLLECTION</text>
+  <text x="115" y="164" fill="#344C3C" font-family="Georgia,serif" font-size="39" font-weight="700">Made for wine country</text>
+  <text x="115" y="197" fill="#758579" font-family="Arial,sans-serif" font-size="17">WordPress sites for 10+ winery clients</text>
+  <rect x="797" y="494" width="285" height="105" rx="17" fill="#fff" opacity=".92"/>
+  <circle cx="845" cy="546" r="28" fill="#F5E3BD"/><path d="M836 529h18l-2 25c-1 8-13 8-14 0l-2-25Zm-1-8h20" stroke="#9A7046" stroke-width="3" stroke-linecap="round"/>
+  <text x="887" y="536" fill="#758579" font-family="Arial,sans-serif" font-size="14">SELECTED CLIENT WORK</text>
+  <text x="887" y="566" fill="#344C3C" font-family="Arial,sans-serif" font-size="19" font-weight="700">Winery websites</text>
+</svg>

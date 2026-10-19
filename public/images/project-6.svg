@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="milk-bg" x1="80" y1="20" x2="1082" y2="652" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF7F0"/><stop offset="1" stop-color="#EDF5FF"/></linearGradient>
+    <filter id="milk-shadow" x="122" y="90" width="956" height="524" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#milk-bg)"/><circle cx="1020" cy="120" r="148" fill="#D4E8FF" opacity=".6"/><circle cx="141" cy="574" r="152" fill="#C9E9D7" opacity=".6"/>
+  <rect x="152" y="112" width="896" height="478" rx="24" fill="#789283" opacity=".15" filter="url(#milk-shadow)"/>
+  <rect x="140" y="96" width="920" height="478" rx="24" fill="#fff" stroke="#DFE9E2" stroke-width="2"/>
+  <path d="M164 96h872a24 24 0 0 1 24 24v50H140v-50a24 24 0 0 1 24-24Z" fill="#FAFCFA"/><path d="M140 170h920" stroke="#E8EEE9" stroke-width="2"/>
+  <circle cx="179" cy="132" r="17" fill="#E4F4E8"/><path d="M179 142s-10-7-10-15a6 6 0 0 1 10-4 6 6 0 0 1 10 4c0 8-10 15-10 15Z" fill="#5BA477"/>
+  <text x="209" y="139" fill="#385A48" font-family="Arial,sans-serif" font-size="22" font-weight="700">Milk Club</text>
+  <text x="754" y="137" fill="#7F9287" font-family="Arial,sans-serif" font-size="14">Shop</text><text x="830" y="137" fill="#7F9287" font-family="Arial,sans-serif" font-size="14">About</text>
+  <circle cx="1012" cy="132" r="18" fill="#EDF5EF"/><path d="M1005 127h14l-2 12h-10l-2-12Zm3-4a4 4 0 0 1 8 0" stroke="#5C806A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="194" y="242" fill="#5B826A" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">WORDPRESS WEBSITE</text>
+  <text x="194" y="291" fill="#2D4A3A" font-family="Georgia,serif" font-size="35" font-weight="700">A fresh, simple storefront</text>
+  <text x="194" y="324" fill="#7E9084" font-family="Arial,sans-serif" font-size="16">Client website work, shaped for Milk Club</text>
+  <rect x="194" y="356" width="176" height="47" rx="9" fill="#4E9B70"/><text x="227" y="386" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">Explore products</text>
+  <rect x="194" y="438" width="525" height="84" rx="15" fill="#F4F8F4"/>
+  <circle cx="238" cy="480" r="23" fill="#E1F0E3"/><path d="M226 480c8-13 16-13 24 0-8 13-16 13-24 0Z" fill="#77AB83"/>
+  <path d="M281 466h365M281 488h288" stroke="#D7E3D9" stroke-width="9" stroke-linecap="round"/>
+  <rect x="759" y="210" width="244" height="315" rx="20" fill="#F1F7F2"/>
+  <ellipse cx="881" cy="494" rx="76" ry="14" fill="#DAE8DC"/>
+  <path d="M841 301h80l16 165c2 21-13 38-34 38h-44c-21 0-37-17-34-38l16-165Z" fill="#fff" stroke="#BCD4C1" stroke-width="3"/>
+  <path d="M847 300v-32h68v32" fill="#E6F0E8" stroke="#BCD4C1" stroke-width="3" stroke-linejoin="round"/><path d="M854 268h54l-8-22h-38l-8 22Z" fill="#8AB895"/>
+  <path d="M855 365h53" stroke="#DDE9DE" stroke-width="3"/><circle cx="881" cy="397" r="21" fill="#E8F3E8"/>
+  <path d="M881 410s-12-8-12-18a7 7 0 0 1 12-5 7 7 0 0 1 12 5c0 10-12 18-12 18Z" fill="#6CA77A"/>
+  <text x="853" y="445" fill="#53755C" font-family="Arial,sans-serif" font-size="13" font-weight="700">MILK CLUB</text>
+</svg>

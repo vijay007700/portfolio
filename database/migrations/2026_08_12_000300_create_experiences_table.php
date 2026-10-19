@@ -1,0 +1,3 @@
+<?php
+use Illuminate\Database\Migrations\Migration; use Illuminate\Database\Schema\Blueprint; use Illuminate\Support\Facades\Schema;
+return new class extends Migration { public function up(): void { Schema::create('experiences', function(Blueprint $t){ $t->id(); $t->string('role'); $t->string('company')->nullable(); $t->string('employment_type')->nullable(); $t->date('start_date')->nullable(); $t->date('end_date')->nullable(); $t->boolean('is_current')->default(false); $t->text('summary'); $t->longText('highlights')->nullable(); $t->unsignedInteger('sort_order')->default(0); $t->timestamps(); }); } public function down(): void { Schema::dropIfExists('experiences'); } };

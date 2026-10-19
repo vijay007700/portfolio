@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="quiz-bg" x1="51" y1="45" x2="1149" y2="645" gradientUnits="userSpaceOnUse"><stop stop-color="#F1EEFF"/><stop offset="1" stop-color="#EAF5FF"/></linearGradient>
+    <filter id="quiz-shadow" x="127" y="89" width="944" height="522" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#quiz-bg)"/><circle cx="1040" cy="100" r="143" fill="#D6CEFF" opacity=".55"/><circle cx="117" cy="563" r="136" fill="#CFEBF5" opacity=".65"/>
+  <rect x="151" y="112" width="898" height="469" rx="27" fill="#8897B0" opacity=".16" filter="url(#quiz-shadow)"/>
+  <rect x="139" y="95" width="922" height="469" rx="25" fill="#fff" stroke="#DDE3F0" stroke-width="2"/>
+  <path d="M164 95h872a25 25 0 0 1 25 25v43H139v-43a25 25 0 0 1 25-25Z" fill="#F9FAFD"/><path d="M139 163h922" stroke="#E9EDF4" stroke-width="2"/>
+  <circle cx="173" cy="130" r="6" fill="#F47D85"/><circle cx="194" cy="130" r="6" fill="#E9C16A"/><circle cx="215" cy="130" r="6" fill="#70C89D"/>
+  <text x="259" y="137" fill="#7C899E" font-family="Arial,sans-serif" font-size="15">Tutor LMS · Student quiz</text>
+  <rect x="189" y="198" width="205" height="325" rx="17" fill="#F0EDFF"/>
+  <circle cx="291" cy="275" r="49" fill="#DBD5FF"/><path d="M267 275h48m-24-24v48" stroke="#7564CE" stroke-width="7" stroke-linecap="round"/>
+  <text x="225" y="359" fill="#5E5B83" font-family="Arial,sans-serif" font-size="19" font-weight="700">Learning portal</text>
+  <path d="M224 385h134M224 410h117M224 435h97" stroke="#CEC9E9" stroke-width="9" stroke-linecap="round"/>
+  <rect x="423" y="198" width="597" height="325" rx="17" fill="#fff" stroke="#E8EBF2"/>
+  <text x="462" y="240" fill="#7C76A6" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CUSTOM QUIZ</text>
+  <text x="462" y="282" fill="#273750" font-family="Arial,sans-serif" font-size="24" font-weight="700">Question 04</text>
+  <text x="462" y="320" fill="#64738A" font-family="Arial,sans-serif" font-size="17">Choose the best answer to continue</text>
+  <rect x="462" y="346" width="513" height="43" rx="10" fill="#F8F9FC" stroke="#E5EAF2"/>
+  <circle cx="485" cy="367" r="9" stroke="#AEB9CB" stroke-width="2"/><path d="M508 368h173" stroke="#CED6E2" stroke-width="8" stroke-linecap="round"/>
+  <rect x="462" y="400" width="513" height="43" rx="10" fill="#EEF2FF" stroke="#BFCDF5" stroke-width="2"/>
+  <circle cx="485" cy="421" r="9" fill="#5278DF"/><circle cx="485" cy="421" r="4" fill="#fff"/><path d="M508 422h222" stroke="#9AAFE8" stroke-width="8" stroke-linecap="round"/>
+  <rect x="462" y="462" width="144" height="38" rx="9" fill="#3569E8"/><text x="495" y="487" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Continue</text>
+  <rect x="807" y="225" width="168" height="8" rx="4" fill="#E8ECF4"/><rect x="807" y="225" width="112" height="8" rx="4" fill="#8B7AE8"/>
+</svg>

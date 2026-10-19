@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="chat-bg" x1="62" y1="30" x2="1121" y2="641" gradientUnits="userSpaceOnUse"><stop stop-color="#E9F5FF"/><stop offset="1" stop-color="#F2EDFF"/></linearGradient>
+    <filter id="chat-shadow" x="92" y="89" width="1027" height="540" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#chat-bg)"/><circle cx="1022" cy="118" r="148" fill="#D9D1FF" opacity=".55"/><circle cx="149" cy="578" r="156" fill="#C9E7F6" opacity=".6"/>
+  <rect x="113" y="112" width="975" height="484" rx="27" fill="#8795B0" opacity=".18" filter="url(#chat-shadow)"/>
+  <rect x="102" y="95" width="997" height="489" rx="25" fill="#fff" stroke="#DDE4EF" stroke-width="2"/>
+  <path d="M127 95h947a25 25 0 0 1 25 25v46H102v-46a25 25 0 0 1 25-25Z" fill="#F9FAFD"/><path d="M102 166h997" stroke="#E6EBF2" stroke-width="2"/>
+  <circle cx="141" cy="130" r="6" fill="#F47D85"/><circle cx="162" cy="130" r="6" fill="#E9C16A"/><circle cx="183" cy="130" r="6" fill="#70C89D"/>
+  <text x="229" y="137" fill="#718097" font-family="Arial,sans-serif" font-size="15">Realtime workspace</text>
+  <rect x="131" y="193" width="540" height="355" rx="18" fill="#F7F9FC"/>
+  <circle cx="177" cy="235" r="20" fill="#D8E4FF"/><circle cx="177" cy="230" r="7" fill="#6484D5"/><path d="M164 247c2-10 24-10 26 0" stroke="#6484D5" stroke-width="3" stroke-linecap="round"/>
+  <text x="211" y="241" fill="#293B55" font-family="Arial,sans-serif" font-size="16" font-weight="700">Team conversation</text>
+  <rect x="168" y="276" width="282" height="59" rx="15" fill="#E8EEFA"/><path d="M190 298h215m-215 17h153" stroke="#AAB8D3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="348" y="350" width="278" height="59" rx="15" fill="#EAF7F1"/><path d="M370 372h211m-211 17h166" stroke="#A8D1BE" stroke-width="8" stroke-linecap="round"/>
+  <rect x="168" y="424" width="330" height="59" rx="15" fill="#E8EEFA"/><path d="M190 446h257m-257 17h181" stroke="#AAB8D3" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="592" cy="517" r="15" fill="#6AC79C"/><circle cx="551" cy="517" r="15" fill="#D2DBEC"/><circle cx="510" cy="517" r="15" fill="#D2DBEC"/>
+  <rect x="702" y="193" width="355" height="355" rx="18" fill="#EAF1FF"/>
+  <rect x="725" y="215" width="309" height="223" rx="15" fill="#CAD8F2"/>
+  <circle cx="879" cy="294" r="52" fill="#F2C9A5"/><path d="M821 295c1-54 96-71 117-8-28 0-47-10-61-26-11 18-28 30-56 34Z" fill="#71604E"/>
+  <path d="M805 435c5-89 44-116 74-116s73 28 78 116H805Z" fill="#7196DB"/>
+  <rect x="824" y="459" width="118" height="46" rx="23" fill="#fff"/><circle cx="848" cy="482" r="10" fill="#F06B73"/><path d="m884 475 19 7-19 7v-14Z" fill="#6381D3"/>
+  <circle cx="1010" cy="465" r="16" fill="#fff"/><path d="m1005 458 12 7-12 7v-14Z" fill="#6381D3"/>
+  <text x="760" y="526" fill="#5B6E91" font-family="Arial,sans-serif" font-size="14" font-weight="700">Socket-based chat &amp; calls</text>
+</svg>

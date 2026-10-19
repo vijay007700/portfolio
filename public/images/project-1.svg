@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="export-bg" x1="40" y1="30" x2="1100" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF3FF"/><stop offset="1" stop-color="#E9F7F3"/></linearGradient>
+    <linearGradient id="export-chart" x1="560" y1="480" x2="1030" y2="280" gradientUnits="userSpaceOnUse"><stop stop-color="#75A7F8"/><stop offset="1" stop-color="#65D1B0"/></linearGradient>
+    <filter id="export-shadow" x="105" y="44" width="1010" height="600" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#export-bg)"/>
+  <circle cx="1030" cy="94" r="152" fill="#A9D5FF" opacity=".3"/>
+  <circle cx="154" cy="591" r="184" fill="#9FE4CB" opacity=".28"/>
+  <rect x="124" y="76" width="970" height="536" rx="25" fill="#7890B5" opacity=".12" filter="url(#export-shadow)"/>
+  <rect x="112" y="58" width="976" height="540" rx="22" fill="#fff" stroke="#D7E2EF" stroke-width="2"/>
+  <path d="M134 58h932a22 22 0 0 1 22 22v50H112V80a22 22 0 0 1 22-22Z" fill="#F8FAFD"/>
+  <path d="M112 130h976" stroke="#E7EDF4" stroke-width="2"/>
+  <rect x="145" y="82" width="34" height="34" rx="10" fill="#3569E8"/>
+  <path d="M153 105V92h5l4 6 4-6h5v13h-5v-6l-4 5-4-5v6h-5Z" fill="#fff"/>
+  <text x="190" y="105" fill="#243751" font-family="Arial,sans-serif" font-size="22" font-weight="700">PC EXPORTERS</text>
+  <text x="744" y="103" fill="#7A899B" font-family="Arial,sans-serif" font-size="15">Dashboard</text>
+  <circle cx="1034" cy="99" r="18" fill="#E8F0FF"/><circle cx="1034" cy="94" r="6" fill="#5A7AB5"/><path d="M1023 108c2-8 20-8 22 0" stroke="#5A7AB5" stroke-width="3" stroke-linecap="round"/>
+  <text x="166" y="184" fill="#243751" font-family="Arial,sans-serif" font-size="28" font-weight="700">Trade at a glance</text>
+  <text x="166" y="211" fill="#8290A3" font-family="Arial,sans-serif" font-size="15">B2B commerce dashboard</text>
+  <rect x="166" y="240" width="255" height="115" rx="15" fill="#F5F8FC" stroke="#E6ECF4"/>
+  <text x="190" y="272" fill="#7D8CA0" font-family="Arial,sans-serif" font-size="14">ACTIVE ORDERS</text>
+  <text x="190" y="319" fill="#243751" font-family="Arial,sans-serif" font-size="34" font-weight="700">Order overview</text>
+  <rect x="443" y="240" width="255" height="115" rx="15" fill="#F5F8FC" stroke="#E6ECF4"/>
+  <text x="467" y="272" fill="#7D8CA0" font-family="Arial,sans-serif" font-size="14">PRODUCT CATALOGUE</text>
+  <text x="467" y="319" fill="#243751" font-family="Arial,sans-serif" font-size="25" font-weight="700">Built for buyers</text>
+  <rect x="720" y="240" width="328" height="115" rx="15" fill="#EEF8F4"/>
+  <circle cx="758" cy="294" r="22" fill="#D2F1E4"/><path d="M747 294h22m-8-8 8 8-8 8" stroke="#399B78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="795" y="282" fill="#668A7F" font-family="Arial,sans-serif" font-size="14">CLIENT PROJECT</text>
+  <text x="795" y="315" fill="#286B57" font-family="Arial,sans-serif" font-size="22" font-weight="700">PC Exporters</text>
+  <rect x="166" y="379" width="882" height="174" rx="15" fill="#fff" stroke="#E6ECF4"/>
+  <text x="190" y="414" fill="#4C5E75" font-family="Arial,sans-serif" font-size="16" font-weight="700">Business activity</text>
+  <path d="M204 510c55-31 96-18 144-53 46-34 80-9 123-40s77-4 123-34 77 10 120-19 82 7 123-23" stroke="url(#export-chart)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M204 522h804M204 474h804M204 426h804" stroke="#EDF1F6" stroke-width="2"/>
+  <circle cx="837" cy="364" r="7" fill="#6F9CF0"/><circle cx="877" cy="364" r="7" fill="#6BC9A7"/>
+</svg>

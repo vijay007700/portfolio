@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="api-bg" x1="111" y1="24" x2="1072" y2="656" gradientUnits="userSpaceOnUse"><stop stop-color="#EAF3FF"/><stop offset="1" stop-color="#EEF7FF"/></linearGradient>
+    <filter id="api-shadow" x="272" y="50" width="655" height="577" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#api-bg)"/>
+  <circle cx="190" cy="126" r="105" fill="#C9DFFF" opacity=".55"/><circle cx="1033" cy="561" r="156" fill="#C7EBDD" opacity=".55"/>
+  <path d="M265 324h151m417 0h153M599 193v-49m0 360v-64" stroke="#A9BEE0" stroke-width="5" stroke-dasharray="10 12"/>
+  <rect x="450" y="70" width="300" height="535" rx="42" fill="#7E91AE" opacity=".2" filter="url(#api-shadow)"/>
+  <rect x="462" y="55" width="276" height="548" rx="40" fill="#fff" stroke="#CAD7E8" stroke-width="3"/>
+  <rect x="480" y="77" width="240" height="502" rx="28" fill="#F7F9FD"/><rect x="562" y="91" width="76" height="7" rx="4" fill="#C9D3E1"/>
+  <text x="506" y="148" fill="#718198" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">MOBILE BACKEND</text>
+  <text x="506" y="187" fill="#253953" font-family="Arial,sans-serif" font-size="25" font-weight="700">API connected</text>
+  <rect x="506" y="208" width="188" height="79" rx="15" fill="#EAF2FF"/>
+  <circle cx="535" cy="247" r="17" fill="#D2E2FF"/><path d="m527 247 6 6 11-13" stroke="#3569E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="565" y="242" fill="#46618E" font-family="Arial,sans-serif" font-size="13">Response</text><text x="565" y="263" fill="#3569E8" font-family="Arial,sans-serif" font-size="18" font-weight="700">200 OK</text>
+  <rect x="506" y="306" width="188" height="100" rx="15" fill="#fff" stroke="#E3EAF3"/>
+  <text x="524" y="335" fill="#8795A8" font-family="Arial,sans-serif" font-size="12">APP REQUESTS</text>
+  <path d="M524 360h130M524 379h96" stroke="#D9E1EB" stroke-width="8" stroke-linecap="round"/>
+  <rect x="506" y="424" width="188" height="100" rx="15" fill="#EFF8F4"/>
+  <text x="524" y="454" fill="#6E8C80" font-family="Arial,sans-serif" font-size="12">CONNECTED APPS</text>
+  <text x="524" y="492" fill="#337A61" font-family="Arial,sans-serif" font-size="28" font-weight="700">30+</text>
+  <text x="586" y="490" fill="#6E8C80" font-family="Arial,sans-serif" font-size="13">mobile apps</text>
+  <circle cx="220" cy="324" r="76" fill="#fff" stroke="#D7E4F3" stroke-width="2"/><rect x="192" y="300" width="56" height="48" rx="12" fill="#EAF2FF"/><path d="M202 315h36m-36 11h22" stroke="#5C84D4" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="980" cy="324" r="76" fill="#fff" stroke="#D7E4F3" stroke-width="2"/><rect x="952" y="300" width="56" height="48" rx="12" fill="#E8F7F0"/><path d="M964 314h31m-31 12h22" stroke="#52A883" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="599" cy="159" r="49" fill="#fff" stroke="#D7E4F3" stroke-width="2"/><path d="M581 159h36m-18-18v36" stroke="#5C84D4" stroke-width="6" stroke-linecap="round"/>
+</svg>

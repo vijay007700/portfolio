@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="tyre-bg" x1="57" y1="28" x2="1145" y2="652" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF2E4"/><stop offset="1" stop-color="#EAF3FF"/></linearGradient>
+    <filter id="tyre-shadow" x="184" y="130" width="840" height="490" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="19"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#tyre-bg)"/><circle cx="1027" cy="116" r="144" fill="#FFE0BE" opacity=".72"/><circle cx="143" cy="579" r="158" fill="#CFE2FA" opacity=".6"/>
+  <rect x="116" y="89" width="968" height="510" rx="25" fill="#8E9CB1" opacity=".16" filter="url(#tyre-shadow)"/>
+  <rect x="105" y="75" width="990" height="514" rx="24" fill="#fff" stroke="#E6E7E9" stroke-width="2"/>
+  <path d="M129 75h942a24 24 0 0 1 24 24v50H105V99a24 24 0 0 1 24-24Z" fill="#FCFCFD"/><path d="M105 149h990" stroke="#EAEDF1" stroke-width="2"/>
+  <circle cx="148" cy="112" r="17" fill="#EAF1FB"/><path d="M137 112h22m-11-11v22" stroke="#5D79AA" stroke-width="3" stroke-linecap="round"/>
+  <text x="180" y="119" fill="#34455D" font-family="Arial,sans-serif" font-size="21" font-weight="700">MOTION TYRE</text>
+  <text x="807" y="118" fill="#8290A1" font-family="Arial,sans-serif" font-size="14">Products</text><text x="887" y="118" fill="#8290A1" font-family="Arial,sans-serif" font-size="14">Services</text>
+  <text x="164" y="232" fill="#738198" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">WORDPRESS WEBSITE</text>
+  <text x="164" y="282" fill="#253750" font-family="Arial,sans-serif" font-size="38" font-weight="700">Ready for the road</text>
+  <text x="164" y="316" fill="#79879A" font-family="Arial,sans-serif" font-size="16">Client website work for Motion Tyre</text>
+  <rect x="164" y="350" width="169" height="48" rx="9" fill="#3569E8"/><text x="199" y="381" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">Find your tyres</text>
+  <path d="M164 459h397M164 484h321" stroke="#E3E8EF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="820" cy="358" r="166" fill="#E9EEF5"/><circle cx="820" cy="358" r="132" fill="#303946"/><circle cx="820" cy="358" r="103" fill="#6D7785"/>
+  <circle cx="820" cy="358" r="73" fill="#E9EEF5"/><circle cx="820" cy="358" r="35" fill="#BBC5D1"/><circle cx="820" cy="358" r="18" fill="#fff"/>
+  <g stroke="#8792A0" stroke-width="9" stroke-linecap="round"><path d="m766 267-18-23m72 4-4-31m73 51 22-20m8 80 31-2m-26 74 23 17m-74 30 3 30m-74-26-19 22m-35-72-31 2m31-72-21-20"/></g>
+  <rect x="690" y="548" width="260" height="27" rx="13" fill="#F2F5F9"/><path d="M724 561h192" stroke="#D5DEE9" stroke-width="6" stroke-linecap="round"/>
+</svg>
