@@ -2,7 +2,8 @@ FROM php:8.3-cli-alpine
 
 RUN apk add --no-cache bash libxml2 libzip sqlite-libs \
     && apk add --no-cache --virtual .build-deps $PHPIZE_DEPS libxml2-dev libzip-dev sqlite-dev oniguruma-dev \
-    && docker-php-ext-install dom mbstring pdo_sqlite simplexml xml xmlreader xmlwriter zip \
+    && docker-php-ext-install dom mbstring pdo_sqlite simplexml xml xmlwriter zip \
+    && CFLAGS="-I/usr/src/php" docker-php-ext-install xmlreader \
     && apk del .build-deps
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer

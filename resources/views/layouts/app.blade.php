@@ -20,19 +20,20 @@
     <meta property="og:title" content="{{ $pageTitle }}">
     <meta property="og:description" content="{{ $pageDescription }}">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta name="theme-color" content="#f6f8fc">
+    <meta name="theme-color" content="#0b0912">
     <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?v={{ filemtime(public_path('css/app.css')) }}">
 </head>
 <body>
     <header class="site-header" id="top">
         <div class="container nav-wrap">
-            <a class="brand" href="{{ route('home') }}">
+            <a class="brand" href="{{ route('home') }}" aria-label="{{ $avatarName }} — home">
                 @if($profile?->photo)
-                    <img class="brand-avatar" src="{{ asset($profile->photo) }}" alt="{{ $profile->name }}">
+                    <img class="brand-avatar" src="{{ asset($profile->photo) }}" alt="">
                 @else
                     <span class="brand-mark">{{ $avatarMark }}</span>
                 @endif
+                <span class="brand-copy"><strong>{{ $avatarName }}</strong><small>Portfolio</small></span>
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
             <nav class="nav" id="siteNav">

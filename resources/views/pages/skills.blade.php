@@ -6,7 +6,7 @@
         <div class="container page-intro reveal">
             <p class="eyebrow">Technical skills</p>
             <h1>The tools behind the work.</h1>
-            <p class="page-lede">4.5 years across Laravel and PHP, with hands-on work in Node.js, Vue.js, React and WordPress.</p>
+            <p class="page-lede">4.5 years across Laravel and PHP, with hands-on work in Node.js, Vue.js, React, WordPress, MySQL, SQLite, MongoDB, Supabase and Firebase.</p>
         </div>
     </section>
     <section class="section-pad">

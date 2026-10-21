@@ -71,6 +71,10 @@ class DatabaseSeeder extends Seeder
             ['MySQL', 'Databases', 'DB', null],
             ['HTML, CSS and JavaScript', 'Frontend fundamentals', 'WEB', null],
             ['Git', 'Development workflow', 'GIT', null],
+            ['SQLite', 'Databases', 'SQL', null],
+            ['MongoDB', 'Databases', 'MDB', null],
+            ['Supabase', 'Databases', 'SB', null],
+            ['Firebase', 'Databases', 'FB', null],
         ];
 
         foreach ($skills as $index => [$name, $category, $icon, $years]) {

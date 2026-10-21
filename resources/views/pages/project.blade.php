@@ -67,7 +67,7 @@
         <section class="section-pad related-projects-section">
             <div class="container"><div class="section-heading reveal"><div><p class="eyebrow">Keep exploring</p><h2>More projects</h2></div><a class="inline-link" href="{{ route('work') }}">All work <span aria-hidden="true">↗</span></a></div>
                 <div class="project-grid related-project-grid">@foreach($relatedProjects as $related)
-                    <a class="project-card reveal" href="{{ route('work.show', $related->slug) }}" data-tilt><div class="project-card-image"><img src="{{ asset($related->image ?: 'images/project-1.svg') }}?v=20261019" alt="{{ $related->title }} project preview" loading="lazy"></div><div class="project-card-content"><div class="project-card-meta"><span>{{ $related->type }}</span><span aria-hidden="true">↗</span></div><h3>{{ $related->title }}</h3><p>{{ $related->summary }}</p></div></a>
+                    <a class="project-card reveal" href="{{ route('work.show', $related->slug) }}"><div class="project-card-image"><img src="{{ asset($related->image ?: 'images/project-1.svg') }}?v=20261019" alt="{{ $related->title }} project preview" loading="lazy"></div><div class="project-card-content"><div class="project-card-meta"><span>{{ $related->type }}</span><span aria-hidden="true">↗</span></div><h3>{{ $related->title }}</h3><p>{{ $related->summary }}</p></div></a>
                 @endforeach</div>
             </div>
         </section>

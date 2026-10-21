@@ -6,12 +6,27 @@
 @endphp
 <main class="page-shell">
     <section class="page-hero work-hero">
-        <div class="container page-intro reveal">
-            <p class="eyebrow">Selected work <span>— {{ str_pad($projects->count(), 2, '0', STR_PAD_LEFT) }} projects</span></p>
-            <h1>Work built to solve<br><span>real problems.</span></h1>
-            <p class="page-lede">Work across 7+ Laravel websites, mobile APIs, Node.js real-time features and WordPress websites.</p>
+        <div class="container page-intro work-intro-layout reveal">
+            <div class="work-intro-copy">
+                <p class="eyebrow">Selected work <span>— {{ str_pad($projects->count(), 2, '0', STR_PAD_LEFT) }} projects</span></p>
+                <h1>Work built to solve<br><span>real problems.</span></h1>
+                <p class="page-lede">Work across 7+ Laravel websites, mobile APIs, Node.js real-time features and WordPress websites.</p>
+            </div>
+            <div class="work-intro-art" aria-hidden="true">
+                <i class="work-art-orbit work-art-orbit-one"></i>
+                <i class="work-art-orbit work-art-orbit-two"></i>
+                <div class="work-art-sheet work-art-sheet-back"></div>
+                <div class="work-art-sheet work-art-sheet-middle"></div>
+                <div class="work-art-sheet work-art-sheet-front">
+                    <span>Portfolio / Selected</span>
+                    <strong>{{ str_pad($projects->count(), 2, '0', STR_PAD_LEFT) }}</strong>
+                    <small>Projects built with purpose</small>
+                    <i><b></b><b></b><b></b><b></b><b></b></i>
+                </div>
+                <span class="work-art-spark">✳</span>
+            </div>
             @if($categories->isNotEmpty())
-                <div class="filter-bar" aria-label="Filter projects">
+                <div class="filter-bar work-filter-bar" aria-label="Filter projects">
                     <button class="active" type="button" data-filter="all" aria-pressed="true">All projects</button>
                     @foreach($categories as $category)
                         <button type="button" data-filter="{{ \Illuminate\Support\Str::slug($category) }}" aria-pressed="false">{{ $category }}</button>
@@ -30,7 +45,7 @@
                         $fallbackImage = 'images/project-'.((($loop->iteration - 1) % 6) + 1).'.svg';
                         $projectTechnologies = array_slice(array_filter(array_map('trim', explode(',', $project->tech_stack ?? ''))), 0, 4);
                     @endphp
-                <a class="project-card portfolio-card reveal" href="{{ route('work.show', $project->slug) }}" data-project="{{ $filter }}" data-delay="{{ $loop->index * 60 }}" data-tilt>
+                <a class="project-card portfolio-card reveal" href="{{ route('work.show', $project->slug) }}" data-project="{{ $filter }}" data-delay="{{ $loop->index * 60 }}" data-scroll-spin>
                     <div class="project-card-image">
                         <img src="{{ asset($project->image ?: $fallbackImage) }}?v=20261019" alt="{{ $project->title }} project preview" loading="lazy">
                         @if($project->is_demo)<span class="demo-badge">Demo project</span>@endif

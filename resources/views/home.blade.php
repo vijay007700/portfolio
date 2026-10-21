@@ -2,11 +2,12 @@
 
 @section('content')
 @php
-    $profileName = $profile?->name && $profile->name !== 'Your Name' ? $profile->name : 'a Developer';
+    $profileName = $profile?->name && $profile->name !== 'Your Name' ? $profile->name : 'Developer';
     $role = $profile?->title ?: 'Full-Stack Developer';
     $heroSubtitle = $profile?->hero_subtitle ?: 'Full-stack developer with 4.5 years of experience and work across 7+ Laravel websites, including a B2B e-commerce project for PC Exporters.';
     $roles = array_values(array_unique(array_filter([$role, 'Laravel Developer', 'Node.js Developer', 'WordPress Developer'])));
     $technologies = ['Laravel', 'PHP', 'Node.js', 'Vue.js', 'React', 'WordPress'];
+    $homeSkillCards = $skills->flatten(1)->values();
     $resumeUrl = $profile?->resume_url;
     if ($resumeUrl && !\Illuminate\Support\Str::startsWith($resumeUrl, ['http://', 'https://'])) {
         $resumeUrl = asset($resumeUrl);
@@ -19,8 +20,9 @@
         <div class="container hero-layout">
             <div class="hero-copy reveal">
                 <div class="availability-pill"><span></span>{{ $profile?->availability ?: 'Open to opportunities' }}</div>
-                <h1>Hi! I'm <span class="hero-name">{{ $profileName }}</span><br><span class="type-line"><span class="typewriter" data-roles='@json($roles)'>{{ $role }}</span><i aria-hidden="true"></i></span></h1>
-                <p class="hero-description">{{ $heroSubtitle }}</p>
+                <p class="hero-intro-line">{{ $profile?->location ? 'Based in '.$profile->location : 'Independent web developer' }} <span aria-hidden="true">·</span> Remote friendly</p>
+                <h1>I make the web<br><span class="hero-name">work better.</span></h1>
+                <p class="hero-description"><span class="hero-byline">Hi, I'm {{ $profileName }}, a </span><span class="type-line"><span class="typewriter" data-roles='@json($roles)'>{{ $role }}</span><i aria-hidden="true"></i></span><span class="hero-description-detail">{{ $heroSubtitle }}</span></p>
 
                 <div class="hero-proof">
                     <span class="proof-icon" aria-hidden="true">&lt;/&gt;</span>
@@ -45,12 +47,52 @@
             </div>
 
             <div class="hero-visual reveal" data-delay="120">
-                <span class="orbit orbit-one" aria-hidden="true"></span>
-                <span class="orbit orbit-two" aria-hidden="true"></span>
-                <span class="orbit orbit-three" aria-hidden="true"></span>
-                <img class="developer-art" src="{{ asset('images/developer-illustration.svg') }}" alt="Illustration of a developer working at a laptop">
-                <div class="float-label float-label-one"><span>✦</span> Laravel</div>
-                <div class="float-label float-label-two"><span>◈</span> Node.js</div>
+                <div class="hero-3d-atmosphere" aria-hidden="true">
+                    <i class="hero-orbit hero-orbit-one"></i>
+                    <i class="hero-orbit hero-orbit-two"></i>
+                    <span class="hero-prism">✳</span>
+                    <span class="hero-orb"></span>
+                </div>
+                <div class="skill-rotator" data-skill-carousel data-interval="3000" aria-label="Technology and skills">
+                    <div class="skill-card-stack">
+                        @forelse($homeSkillCards as $skill)
+                            @php
+                                $orbitPosition = $loop->first ? 'top' : ($loop->iteration === 2 ? 'right' : ($loop->last && $loop->count > 2 ? 'left' : 'hidden'));
+                            @endphp
+                            <article class="rotating-skill-card is-orbit-{{ $orbitPosition }}" data-skill-slide aria-hidden="{{ $orbitPosition === 'hidden' ? 'true' : 'false' }}">
+                                <div class="rotating-skill-top">
+                                    <span class="rotating-skill-icon">{{ $skill->icon ?: mb_strtoupper(mb_substr($skill->name, 0, 3)) }}</span>
+                                    <span class="rotating-skill-label">Skill / {{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                                    <span class="rotating-skill-dot" aria-hidden="true"></span>
+                                </div>
+                                <div class="rotating-skill-main">
+                                    <p class="eyebrow">{{ $skill->category }}</p>
+                                    <h2>{{ $skill->name }}</h2>
+                                    <span class="rotating-skill-caption">Building reliable digital experiences</span>
+                                </div>
+                                <div class="rotating-skill-bottom">
+                                    <span>Hands-on experience</span>
+                                    <strong>{{ $skill->years !== null ? rtrim(rtrim(number_format((float) $skill->years, 1), '0'), '.').' years' : 'Project work' }}</strong>
+                                </div>
+                                <span class="rotating-skill-watermark" aria-hidden="true">{{ $skill->icon ?: 'DEV' }}</span>
+                            </article>
+                        @empty
+                            <article class="rotating-skill-card is-orbit-top" data-skill-slide aria-hidden="false">
+                                <div class="rotating-skill-top"><span class="rotating-skill-icon">&lt;/&gt;</span><span class="rotating-skill-label">Developer / 01</span><span class="rotating-skill-dot" aria-hidden="true"></span></div>
+                                <div class="rotating-skill-main"><p class="eyebrow">Full stack</p><h2>{{ $role }}</h2><span class="rotating-skill-caption">Building reliable digital experiences</span></div>
+                                <div class="rotating-skill-bottom"><span>Experience</span><strong>{{ $profile?->years_experience ? rtrim(rtrim(number_format((float) $profile->years_experience, 1), '0'), '.').'+ years' : 'Project work' }}</strong></div>
+                            </article>
+                        @endforelse
+                    </div>
+                    <div class="skill-rotator-controls">
+                        <div class="skill-rotator-status"><span data-skill-current>01</span><span class="skill-rotator-divider">/</span><span>{{ str_pad(max(1, $homeSkillCards->count()), 2, '0', STR_PAD_LEFT) }}</span><span class="skill-rotator-progress"><i data-skill-progress></i></span></div>
+                        <div class="skill-rotator-buttons">
+                            <button type="button" data-skill-prev aria-label="Previous skill">←</button>
+                            <button type="button" data-skill-toggle aria-label="Pause skill rotation" aria-pressed="false">Ⅱ</button>
+                            <button type="button" data-skill-next aria-label="Next skill">→</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -63,7 +105,7 @@
             </div>
             <div class="project-grid">
                 @forelse($projects as $project)
-                    <a class="project-card reveal" href="{{ route('work.show', $project->slug) }}" data-delay="{{ $loop->index * 70 }}" data-tilt>
+                    <a class="project-card reveal" href="{{ route('work.show', $project->slug) }}" data-delay="{{ $loop->index * 70 }}" data-scroll-spin>
                         <div class="project-card-image">
                             <img src="{{ asset($project->image ?: 'images/project-'.(($loop->iteration - 1) % 6 + 1).'.svg') }}?v=20261019" alt="{{ $project->title }} project preview" loading="lazy">
                             @if($project->is_demo)<span class="demo-badge">Demo project</span>@endif
@@ -90,7 +132,7 @@
             </div>
             <div class="service-grid">
                 @foreach($services->take(4) as $service)
-                    <article class="service-card reveal" data-delay="{{ $loop->index * 60 }}">
+                    <article class="service-card reveal" data-delay="{{ $loop->index * 60 }}" data-scroll-spin>
                         <div class="service-card-top"><span>{{ $service->icon ?: 'DEV' }}</span><small>{{ str_pad($loop->iteration, 2, '0', STR_PAD_LEFT) }}</small></div>
                         <h3>{{ $service->title }}</h3>
                         <p>{{ $service->short_description }}</p>
