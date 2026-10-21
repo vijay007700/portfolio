@@ -16,20 +16,25 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $adminEmail = env('ADMIN_EMAIL', 'admin@portfolio.test');
-        $adminPassword = env('ADMIN_PASSWORD', 'Admin@123');
+        $isProduction = app()->environment('production');
+        $adminEmail = env('ADMIN_EMAIL') ?: ($isProduction ? null : 'admin@portfolio.test');
+        $adminPassword = env('ADMIN_PASSWORD') ?: ($isProduction ? null : 'Admin@123');
+        $hasProductionAdminCredentials = filled($adminEmail)
+            && filled($adminPassword)
+            && $adminEmail !== 'admin@portfolio.test'
+            && $adminPassword !== 'Admin@123';
 
-        if (app()->environment('production') && ($adminEmail === 'admin@portfolio.test' || $adminPassword === 'Admin@123')) {
-            throw new \RuntimeException('Set a unique ADMIN_EMAIL and ADMIN_PASSWORD before seeding production.');
+        if (!$isProduction || $hasProductionAdminCredentials) {
+            User::firstOrCreate(
+                ['email' => $adminEmail],
+                [
+                    'name' => env('ADMIN_NAME', 'Portfolio Admin'),
+                    'password' => Hash::make($adminPassword),
+                ]
+            );
+        } elseif ($this->command) {
+            $this->command->warn('Admin account was not seeded. Set ADMIN_EMAIL and ADMIN_PASSWORD in the production environment to enable dashboard login.');
         }
-
-        User::firstOrCreate(
-            ['email' => $adminEmail],
-            [
-                'name' => env('ADMIN_NAME', 'Portfolio Admin'),
-                'password' => Hash::make($adminPassword),
-            ]
-        );
 
         // Seed the starter portfolio on a fresh deployment when explicitly enabled.
         // Existing admin-edited content is left intact on subsequent starts.

@@ -105,6 +105,7 @@ The contact API accepts JSON fields `name`, `email`, `company`, `budget`, `proje
 - Point the web server document root to this project's `public/` folder.
 - Set `APP_ENV=production`, `APP_DEBUG=false`, a production `APP_URL`, and strong database/admin credentials.
 - Run `php artisan key:generate` once for the production environment, then `php artisan migrate --force --seed`.
-- In production, the seeder creates the admin account only; add verified public content in the dashboard. Sample content is seeded only in local development.
+- In production, the seeder creates an admin account only when a unique `ADMIN_EMAIL` and `ADMIN_PASSWORD` are configured. If either is missing, it skips admin creation and logs a warning so the public site can still start; configure both before using the dashboard.
+- The Render Blueprint enables starter portfolio content for an empty database with `SEED_PORTFOLIO_CONTENT=true`; set it to `false` if you want to publish an empty portfolio instead.
 - Configure writable `storage/` and `bootstrap/cache/` directories, HTTPS, database backups and log rotation.
 - Do not commit `.env`, production credentials, private client data or confidential screenshots.
